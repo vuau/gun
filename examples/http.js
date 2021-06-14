@@ -6,7 +6,7 @@
 
 	var fs = require('fs');
 	var config = {
-		port: process.env.OPENSHIFT_NODEJS_PORT || process.env.VCAP_APP_PORT || process.env.PORT || process.argv[2] || 8765,
+		port: 8080,
 		peers: process.env.PEERS && process.env.PEERS.split(',') || []
 	};
 	var Gun = require('../'); // require('gun')
