@@ -112,6 +112,7 @@ Thanks to:
 <table><tr>
 <td vlign="center"><a href="https://mozilla.org/builders"><img height="100" src="https://user-images.githubusercontent.com/1423657/81992335-85346480-9643-11ea-8754-8275e98e06bc.png"></a></td>
 <td vlign="center"><a href="http://unstoppabledomains.com/"><img src="https://gun.eco/img/unstoppable.png"></a></td>
+<td vlign="center"><a href="https://www.ajar.org/"><img src="https://www.ajar.org/logo.png" width="200"></a></td>
 </tr></table>
 
 <a href="https://github.com/robertheessels">Robert Heessels</a>,
@@ -130,7 +131,10 @@ Thanks to:
 <a href="http://github.com/finwo">Robin Bron</a>,
 <a href="http://github.com/ElieMakhoul">Elie Makhoul</a>,
 <a href="http://github.com/mikestaub">Mike Staub</a>,
-<a href="http://github.com/bmatusiak">Bradley Matusiak</a>
+<a href="http://github.com/bmatusiak">Bradley Matusiak</a>,
+<a href="https://github.com/sjuxax">Jeff Cook</a>,
+<a href="https://github.com/nmauersberg">Nico</a>,
+<a href="https://github.com/ajartille">Aaron Artille</a>
 </p>
 
  - Join others in sponsoring code: https://www.patreon.com/gunDB !
@@ -216,6 +220,8 @@ var SEA = require('gun/sea');
 ## Deploy
 
  > Note: The default examples that get auto-deployed on `npm start` CDN-ify all GUN files, modules, & storage.
+ 
+ > Note: When deploying a web application using GUN on a cloud provider, you may have to set `CI=false` in your `.env`. This prevents GUN-specific warnings from being treated as errors when deploying your app. You may also resolve this by modifying your webpack config to not try to build the GUN dependencies.
 
 To quickly spin up a GUN relay peer for your development team, utilize [Zeet](https://zeet.co), [Heroku](http://heroku.com), [Docker](http://docker.com), or any variant thereof [Dokku](http://dokku.viewdocs.io/dokku/), [Flynn.io](http://flynn.io), [now.sh](https://zeit.co/now), etc. ! Or use all of them so your relays are decentralized too!
 
