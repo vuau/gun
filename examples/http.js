@@ -6,7 +6,7 @@
 
 	var fs = require('fs');
 	var config = {
-		port: 8080,
+		port: 8765,
 		peers: process.env.PEERS && process.env.PEERS.split(',') || []
 	};
 	var Gun = require('../'); // require('gun')
